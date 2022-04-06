@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>30Shine - Chuỗi salon tóc nam số một Việt Nam</title>
+  <link rel="shortcut icon" href="https://30shine.com/fav.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -17,6 +18,12 @@
   <link rel="stylesheet" href="./assets/fonts/fontawesome-free/css/all.min.css">
   <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/css/lightslider.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- jquery -->
   <script src="./assets/js/Jquery.js"></script>
   <script src="./assets/js/lightslider.js"></script>
@@ -344,7 +351,7 @@
               </a>
               <div class="layout__blog">
                 <div class="swiper__container">
-                  <div class="swiper__wrapper">
+                  <div class="swiper__wrapper slider">
                     <!-- 1 -->
                     <div class="swiper__slide" style="width: 570px; margin-right: 30px;">
                       <a href="">
@@ -385,6 +392,32 @@
                       </a>
                     </div>
                     <!-- 4 -->
+                    <div class="swiper__slide" style="width: 570px; margin-right: 30px;">
+                      <a href="">
+                        <div class="blog__media">
+                          <img src="./assets/img/30shine-toc-mullet.jpg" alt="">
+                        </div>
+                      </a>
+                      <a href="">
+                        <div class="blog__title">
+                          Phúc lột xác mái tóc để suốt bao năm giúp ngoại hình mới cực cuốn hút
+                        </div>
+                      </a>
+                    </div>
+                    <!-- 5 -->
+                    <div class="swiper__slide" style="width: 570px; margin-right: 30px;">
+                      <a href="">
+                        <div class="blog__media">
+                          <img src="./assets/img/30shine-toc-mullet.jpg" alt="">
+                        </div>
+                      </a>
+                      <a href="">
+                        <div class="blog__title">
+                          Phúc lột xác mái tóc để suốt bao năm giúp ngoại hình mới cực cuốn hút
+                        </div>
+                      </a>
+                    </div>
+                    <!-- 6 -->
                     <div class="swiper__slide" style="width: 570px; margin-right: 30px;">
                       <a href="">
                         <div class="blog__media">
@@ -493,8 +526,47 @@
 
   <!-- script Use Swiper from CDN slider auto scrol-->
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./assets/js/main.js"></script>
-
+  <script type="text/javascript">
+    $('.slider').slick({
+      dots: true,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 3, // số slide muốn hiển thị
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+  </script>
 </body>
 
 </html>
