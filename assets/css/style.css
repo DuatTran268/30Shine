@@ -167,6 +167,9 @@
 .layout__banner-media > img:hover {
   transform: scale(1.04);
 }
+/* layout banner2 ko gian và thiết bị no hover */
+
+
 .layout__list-item {
   display: flex;
   align-items: center;
@@ -274,4 +277,24 @@
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+}
+
+/* banner text ko gian và thiết bị */
+.layout__banner2{
+  position: relative;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.banner__wrapper{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--white-cl-f);
+  z-index: 3;
+  bottom: 10%;
+  width: 70%;
+  background: 0 0;
+}
+.banner__text{
+  font-size: 1.7rem;
 }
