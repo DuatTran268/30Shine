@@ -153,22 +153,25 @@
 .layout__banner {
   margin-bottom: 2rem;
 }
-.layout__banner-media {
+.layout__banner-media,
+.layout__banner2-media {
   border-radius: 0.8rem;
   overflow: hidden;
 }
-.layout__banner-media:hover {
+.layout__banner-media:hover,
+.layout__banner2-media:hover {
   transition: all 0.3s ease-in-out;
 }
-.layout__banner-media > img {
+.layout__banner-media > img,
+.layout__banner2-media > img {
   width: 100%;
   transition: all 0.3s ease;
 }
-.layout__banner-media > img:hover {
+.layout__banner-media > img:hover,
+.layout__banner2-media > img:hover {
   transform: scale(1.04);
 }
 /* layout banner2 ko gian và thiết bị no hover */
-
 
 .layout__list-item {
   display: flex;
@@ -280,12 +283,12 @@
 }
 
 /* banner text ko gian và thiết bị */
-.layout__banner2{
+.layout__banner2 {
   position: relative;
   text-align: center;
   margin-bottom: 2rem;
 }
-.banner__wrapper{
+.banner__wrapper {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -295,6 +298,16 @@
   width: 70%;
   background: 0 0;
 }
-.banner__text{
+.banner__text {
   font-size: 1.7rem;
+}
+
+.layout__banner2-media > img {
+  width: 100%;
+  border-radius: 8px;
+}
+.banner__title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  font-family: Oswald;
 }
