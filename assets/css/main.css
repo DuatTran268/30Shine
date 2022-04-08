@@ -143,6 +143,11 @@ a {
   margin: 0 auto;
   width: 100%;
 }
+.footer__container {
+  padding: 0;
+  margin: auto;
+  max-width: 1200px;
+}
 
 :root {
   --black-cl0: #000;
@@ -152,4 +157,5 @@ a {
   --text-sub-service: #a6a6a6;
   --text-viewall: #2f80ed;
   --text-sub: #686868;
+  --gold-footer: #fabd05;
 }

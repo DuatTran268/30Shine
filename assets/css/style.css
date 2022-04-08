@@ -311,3 +311,155 @@
   font-weight: 600;
   font-family: Oswald;
 }
+
+/* footer layout css */
+.footer {
+  background-color: var(--black-cl0);
+  font-weight: 300;
+}
+.footer__top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.footer__top-col {
+  padding: 3.5rem 1.5rem 1.5rem;
+  color: var(--white-cl-f);
+}
+.footer__info-list,
+.footer__info-item {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.footer__info-list {
+  margin-bottom: 3px;
+}
+.footer__info-item {
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+.footer__info-text {
+  color: var(--white-cl-f);
+  font-weight: 600;
+}
+.footer_ca {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.moit-icon {
+  height: 6rem;
+  margin-right: 1rem;
+}
+.dmca-icon {
+  height: 4rem;
+}
+.footer_app-cash {
+  display: block;
+  margin-top: 1.5rem;
+}
+.footer_app-cash > span {
+  color: varr(--white-cl-cl);
+  font-size: 1.6rem;
+}
+.footer__cash-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.footer__app-item {
+  margin-right: 2rem;
+}
+
+.footer__service-lable {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+.footer__service-detail {
+  font-size: 1.6rem;
+}
+.footer__hotline {
+  margin-top: 3rem;
+}
+.footer__btn-hotline {
+  display: flex;
+  border: 1px solid #fabd05;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.4rem;
+  padding: 1.2rem;
+}
+.footer__btn-hotline > span {
+  font-size: 1.6rem;
+  color: #fabd05;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+.footer__app-badge {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3rem;
+}
+.footer__app-badge > a {
+  margin-right: 2rem;
+}
+.footer__socsial-info {
+  margin-top: 4.5rem;
+}
+.app-info__label {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+.app-info__detail {
+  font-size: 1.6rem;
+}
+.footer__app-badge {
+  display: flex;
+}
+.footer__app-badge > a {
+  margin-right: 2rem;
+}
+.footer__app-badge > a > img {
+  height: 4rem;
+}
+/* footer bottom */
+.footer__bottom {
+  margin-top: 2rem;
+  border-top: 1px solid #3d3d3d;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+.copyright{
+  text-align: center;
+  color: #5f5f5f;
+  font-size: 1.4rem;
+}
+.footer__nav {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  color: var(--white-cl-f);
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+.footer-nav__item {
+  margin-bottom: 1rem;
+}
+.footer-nav__item > a {
+  margin-right: 3rem;
+  color: var(--white-cl-f);
+}
